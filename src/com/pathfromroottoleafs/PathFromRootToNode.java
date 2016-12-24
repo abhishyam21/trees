@@ -41,6 +41,8 @@ public class PathFromRootToNode {
                         if(current.getRightTree() != null) {
                             root = current.getRightTree();
                         }
+                        if(current.getRightTree() == null)
+                            stack.pop();
                     }
                 }
             }
